@@ -6,9 +6,8 @@ from IntellijPlacer import IntellijPlacer
 
 if __name__ == '__main__':
     placer = IntellijPlacer()
-    #load objects
     print(os.getcwd())
-    placer.read_pics('dataset', 1)
+    placer.read_pics('..\dataset', 0)   # второй параметр - номер картинки в дирактории. Начинается с 0.
     placer.try_fit()
 
 
